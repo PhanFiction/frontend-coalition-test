@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <title>Los Angeles Mountains</title>
+</head>
+<body>
+  <nav id="navbar">
+    <ul>
+      <li><img src="images/la-logo.png" alt="logo"></li>
+      <div>
+        <li><a href="#history">01. HISTORY</a></li>
+        <li><a href="#team">02. TEAM</a></li>
+      </div>
+    </ul>
+  </nav>
+  <main>
+    <section id="hero-section"></section>
+    
+    <div class="la-tag center">
+      <div class="la-tag-img">
+        <img src="images/la-logo.png" alt="logo">
+        <img src="images/la-logo-text.png" alt="logo-text">
+      </div>
+      <div class="la-tag-links">
+        <a href="#history">01.HISTORY</a>
+        <a href="#team">02.TEAM</a>
+      </div>
+    </div>
+
+    <section id="history-section">
+      <div class="history-info">
+        <img src="images/la-title1.png" alt="title">
+        <p class="history-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus id interdum velit laoreet. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Felis imperdiet proin fermentum leo vel orci porta non. Diam in arcu cursus euismod quis viverra. Dignissim convallis aenean et tortor.
+        </p>
+      </div>
+
+      <div class="gallery" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true }'>
+        <div class="gallery-cell">
+          <img src="images/carousel-img1.png" alt="first-carousel-image" width="250" height="130" />
+        </div>
+        <div class="gallery-cell">
+          <img src="images/carousel-img2.png" alt="second-carousel-image" width="250" height="130" />
+        </div>
+        <div class="gallery-cell">
+          <img src="images/carousel-img1.png" alt="third-carousel-image" width="250" height="130" />
+        </div>
+        <div class="gallery-cell">
+          <img src="images/carousel-img2.png" alt="fourth-carousel-image" width="250" height="130" />
+        </div>
+      </div>
+    </section>
+
+    <div class="climb-title">
+      <div class="climb-info center">
+        <img src="images/la-title2.png" alt="title2">
+        <p class="climb-text">
+          Lorem ipsum odor amet, consectetuer adipiscing elit. Purus egestas elementum tincidunt netus nam euismod suspendisse mus.
+        </p>
+      </div>
+    </div>
+    
+    <section class="mountain-tag">
+      <div class="">
+        <button id="tab1" class="button active">MOUNTAIN 1</button>
+        <button id="tab2" class="button">MOUNTAIN 2</button>
+      </div>
+    </section>
+
+    <section id="climb-section" class="mountain1">
+      <div id="schedule1" class="show">
+        <img src="images/la-schedule1.png" alt="schedule1">
+      </div>
+      <div id="schedule2" class="hidden">
+        <img src="images/la-schedule2.png" alt="schedule2">
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="center">
+    <div><img src="images/la-footer-logo.png" alt="footer-logo"></div>
+    <span>COPYRIGHT 2016. ALL RIGHTS RESERVED.</span>
+  </footer>
+
+  <!-- Scripts -->
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="/scripts/index.js"></script>
+</body>
+</html>
