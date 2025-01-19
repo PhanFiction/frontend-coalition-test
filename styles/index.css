@@ -1,0 +1,312 @@
+:root {
+	--dark-blue: #364659;
+	--white: #ffffff;
+	--gray: rgb(171, 171, 171);
+
+	--mohave: 'Mohave', sans-serif;
+	--nunito: 'Nunito Sans', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+a {
+  font-family: var(--nunito);
+  color: var(--white);
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}
+
+#navbar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  padding: .5em;
+  width: 100%;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+#navbar ul, #navbar div {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+#navbar ul div {
+  gap: 2em;
+  margin-left: 1em;
+}
+
+#navbar a {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+#hero-section, #history-section, #climb-section {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#hero-section {
+  background-image: url('/images/la-hero-image.png');
+}
+
+#history-section {
+  background-image: url('/images/la-middle-image.png');
+  display: flex;
+  flex-direction: column;
+}
+
+.mountain1 {
+  background-image: url('/images/la-mountain1.png');
+}
+
+.mountain2 {
+  background-image: url('/images/la-mountain2.png');
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#history-section > div > p {
+  position: relative;
+  left: 30px;
+  color: black;
+  font-family: var(--mohave);
+}
+
+.history-info, .climb-info {
+  width: 62%;
+  margin: auto;
+  padding: 1.5rem;
+}
+
+.history-info {
+  margin-top: 3em;
+}
+
+.history-text, .climb-text {
+	padding-left: 3.5rem;
+	padding-right: 3.5rem;
+  color: black;
+}
+
+.climb-title {
+  background-color: var(--white);
+}
+
+.mountain-tag {
+	background-color: var(--dark-blue);
+  display: flex;
+  justify-content: center;
+}
+
+.mountain-tag div {
+  display: flex;
+	width: 62%;
+}
+
+.button {
+  padding: .5em;
+  background-color: transparent;
+  color: var(--gray);
+  font-family: var(--mohave);
+  font-size: large;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.475);
+  text-decoration: underline;
+	font-weight: 800;
+  color: var(--dark-blue);
+}
+
+.la-tag {
+  padding: .5em;
+}
+
+.la-tag-img {
+  width: 47.5%;
+}
+
+.la-tag-links {
+  display: flex;
+  gap: 2em;
+}
+
+.la-tag-links a {
+  text-decoration: underline;
+  color: var(--dark-blue);
+}
+
+.show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  translate: -15%;
+  width: 100%;
+  height: 60vh;
+}
+
+#climb-section div img, footer div img {
+  width: auto;
+}
+
+footer {
+  padding: .5em;
+  background-color: var(--dark-blue);
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div {
+  width: 45%;
+}
+
+footer span {
+  color: #687da6;
+	font-weight: 900;
+	font-family: var(--nunito);
+  font-size: x-small;
+}
+
+/* Carousel */
+.gallery {
+	height: 10rem;
+}
+
+.gallery-cell {
+	height: 10rem;
+	width: 100%;
+	margin-right: 10px;
+  background-color: #364659cf;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flickity-page-dots {
+	top: 9rem;
+}
+
+.flickity-page-dots button {
+	background-color: rgba(255, 255, 255, 0.475);
+}
+
+.flickity-page-dots button.is-selected {
+	background-color: green;
+}
+
+@media screen and (max-width: 700px) {  
+  #navbar ul {
+    width: auto;
+  }
+
+  .carousel {
+    width: 80%;
+  }
+
+  #hero-section {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 40vh;
+  }
+  
+  #history-section > div {
+    width: auto;
+  }
+  
+  #history-section > div > p {
+    position: none;
+    left: 0;
+  }
+  
+  .history-info, .climb-info {
+    width: auto;
+    padding: 0;
+  }
+
+  .climb-info {
+    width: auto;
+    flex-direction: column;
+  }
+
+  #climb-section {
+    height: auto;
+  }
+
+  #climb-section div {
+    justify-content: center;
+    translate: 0;
+  }
+
+  #climb-section div img {
+    width: 250px;
+  }
+
+  .history-text, .climb-text {
+    padding: 0;
+    margin: 1rem;
+  }
+
+  .la-tag {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .la-tag-img {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .la-tag-img img {
+    width: auto;
+  }
+
+  .mountain-tag div {
+    display: flex;
+  }
+  
+  .button {
+    font-size: small;
+  }
+  
+  footer div img {
+    width: 80%;
+  }
+}
